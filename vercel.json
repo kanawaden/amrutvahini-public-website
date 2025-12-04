@@ -1,0 +1,8 @@
+{
+  "buildCommand": "cd amrutvahini-nextjs && npm install && npm run build",
+  "outputDirectory": "amrutvahini-nextjs/.next",
+  "installCommand": "cd amrutvahini-nextjs && npm install",
+  "framework": "nextjs",
+  "rewrites": [{ "source": "/(.*)", "destination": "/" }]
+}
+
