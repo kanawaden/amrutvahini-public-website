@@ -49,8 +49,8 @@ export default function Footer() {
             </p>
             
             <p>
-              📞 <a href="tel:+919146910401">+91 9146910401</a><br />
-              📧 <a href="mailto:annasahebkanawade57@gmail.com">annasahebkanawade57@gmail.com</a>
+              📞 <a href="tel:+919821663804">+91 9821663804</a><br />
+              📧 <a href="mailto:amrutvahiniprakriya@gmail.com">amrutvahiniprakriya@gmail.com</a>
             </p>
           </div>
         </div>

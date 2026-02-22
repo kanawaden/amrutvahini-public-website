@@ -1,15 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,700;1,600&family=Tiro+Devanagari+Marathi:ital,wght@0,400;0,700;1,400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600;700&family=DM+Sans:wght@400;500;700&family=Playfair+Display:ital,wght@0,700;1,600&family=Tiro+Devanagari+Marathi:ital,wght@0,400;0,700;1,400&display=swap");
 
 :root {
-  --forest-green: #2D5016;
-  --warm-golden: #D4A574;
-  --earth-brown: #6B4423;
-  --soft-cream: #F5F1E8;
-  --pure-white: #FFFFFF;
-  --sky-blue: #87CEEB;
-  --vibrant-orange: #FF8C42;
+  --forest-green: #2d5016;
+  --warm-golden: #d4a574;
+  --earth-brown: #6b4423;
+  --soft-cream: #f5f1e8;
+  --pure-white: #ffffff;
+  --sky-blue: #87ceeb;
+  --vibrant-orange: #ff8c42;
   --deep-forest: #1a3009;
-  --light-sage: #A8B89D;
+  --light-sage: #a8b89d;
 }
 
 * {
@@ -23,25 +23,27 @@ html {
 }
 
 body {
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   line-height: 1.7;
   color: #333;
   overflow-x: hidden;
 }
 
 body[lang="mr"] {
-  font-family: 'Tiro Devanagari Marathi', serif;
+  font-family: "Tiro Devanagari Marathi", serif;
 }
 
 body[lang="mr"] h1,
 body[lang="mr"] h2,
 body[lang="mr"] h3 {
-  font-family: 'Tiro Devanagari Marathi', serif;
+  font-family: "Tiro Devanagari Marathi", serif;
 }
 
 /* Typography */
-h1, h2, h3 {
-  font-family: 'Cormorant Garamond', serif;
+h1,
+h2,
+h3 {
+  font-family: "Cormorant Garamond", serif;
   font-weight: 700;
   line-height: 1.2;
 }
@@ -63,7 +65,7 @@ h3 {
 }
 
 .accent-text {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   font-style: italic;
   color: var(--earth-brown);
 }
@@ -71,7 +73,7 @@ h3 {
 /* Language Switcher */
 .language-switcher {
   position: fixed;
-  top: 100px;
+  top: 90px;
   right: 2rem;
   z-index: 1001;
   background: white;
@@ -119,14 +121,14 @@ header {
 nav {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 1.5rem 2rem;
+  padding: 0 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
 .logo {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 1.8rem;
   font-weight: 700;
   color: var(--forest-green);
@@ -137,8 +139,13 @@ nav {
 }
 
 body[lang="mr"] .logo {
-  font-family: 'Tiro Devanagari Marathi', serif;
+  font-family: "Tiro Devanagari Marathi", serif;
   font-size: 1.5rem;
+}
+
+.logo-img {
+  height: 80px;
+  width: auto;
 }
 
 .logo-icon {
@@ -168,7 +175,7 @@ body[lang="mr"] .logo {
 }
 
 .nav-links a::after {
-  content: '';
+  content: "";
   position: absolute;
   bottom: -5px;
   left: 0;
@@ -224,20 +231,28 @@ body[lang="mr"] .logo {
   align-items: center;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(135deg, #F5F1E8 0%, #E8DCC8 100%);
-  padding-top: 100px;
+  background: linear-gradient(135deg, #f5f1e8 0%, #e8dcc8 100%);
+  padding-top: 80px;
 }
 
 .hero::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: 
-    radial-gradient(circle at 20% 50%, rgba(212, 165, 116, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 80% 80%, rgba(45, 80, 22, 0.1) 0%, transparent 50%);
+  background:
+    radial-gradient(
+      circle at 20% 50%,
+      rgba(212, 165, 116, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 80%,
+      rgba(45, 80, 22, 0.1) 0%,
+      transparent 50%
+    );
   pointer-events: none;
 }
 
@@ -247,9 +262,21 @@ body[lang="mr"] .logo {
   left: 0;
   right: 0;
   bottom: 0;
-  background-image: 
-    repeating-linear-gradient(90deg, transparent, transparent 2px, rgba(45, 80, 22, 0.02) 2px, rgba(45, 80, 22, 0.02) 4px),
-    repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(45, 80, 22, 0.02) 2px, rgba(45, 80, 22, 0.02) 4px);
+  background-image:
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 2px,
+      rgba(45, 80, 22, 0.02) 2px,
+      rgba(45, 80, 22, 0.02) 4px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 2px,
+      rgba(45, 80, 22, 0.02) 2px,
+      rgba(45, 80, 22, 0.02) 4px
+    );
   opacity: 0.3;
 }
 
@@ -366,7 +393,11 @@ body[lang="mr"] .logo {
 }
 
 .hero-visual {
-  background: linear-gradient(135deg, var(--warm-golden) 0%, var(--earth-brown) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--warm-golden) 0%,
+    var(--earth-brown) 100%
+  );
   height: 600px;
   border-radius: 30px;
   position: relative;
@@ -375,7 +406,7 @@ body[lang="mr"] .logo {
 }
 
 .hero-visual::before {
-  content: '🌾';
+  content: "🌾";
   position: absolute;
   font-size: 20rem;
   top: 50%;
@@ -409,7 +440,7 @@ body[lang="mr"] .logo {
   font-size: 2.5rem;
   font-weight: 700;
   color: var(--forest-green);
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
 }
 
 .stat-label {
@@ -502,7 +533,7 @@ section {
   font-size: 2.5rem;
   font-weight: 700;
   color: var(--forest-green);
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
 }
 
 .visual-label {
@@ -529,7 +560,7 @@ section {
 }
 
 .vm-card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -574,7 +605,7 @@ section {
 }
 
 .product-card::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -631,7 +662,7 @@ section {
 }
 
 .product-list li::before {
-  content: '✓';
+  content: "✓";
   position: absolute;
   left: 0;
   color: var(--forest-green);
@@ -710,7 +741,7 @@ section {
 }
 
 .farmers-benefits li::before {
-  content: '✓';
+  content: "✓";
   display: inline-block;
   width: 30px;
   height: 30px;
@@ -723,7 +754,11 @@ section {
 }
 
 .farmers-visual {
-  background: linear-gradient(135deg, var(--forest-green) 0%, var(--deep-forest) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--forest-green) 0%,
+    var(--deep-forest) 100%
+  );
   height: 500px;
   border-radius: 30px;
   position: relative;
@@ -732,7 +767,7 @@ section {
 }
 
 .farmers-visual::before {
-  content: '🤝';
+  content: "🤝";
   position: absolute;
   font-size: 15rem;
   top: 50%;
@@ -764,7 +799,7 @@ section {
   left: 20px;
   font-size: 8rem;
   color: var(--soft-cream);
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   line-height: 1;
 }
 
@@ -800,13 +835,13 @@ section {
 
 .author-info h4 {
   color: var(--forest-green);
-  font-family: 'DM Sans', sans-serif;
+  font-family: "DM Sans", sans-serif;
   font-size: 1.1rem;
   margin-bottom: 0.25rem;
 }
 
 body[lang="mr"] .author-info h4 {
-  font-family: 'Tiro Devanagari Marathi', serif;
+  font-family: "Tiro Devanagari Marathi", serif;
 }
 
 .author-location {
@@ -849,13 +884,13 @@ body[lang="mr"] .author-info h4 {
 
 .infra-item h4 {
   color: var(--forest-green);
-  font-family: 'Cormorant Garamond', serif;
+  font-family: "Cormorant Garamond", serif;
   font-size: 1.3rem;
   margin-bottom: 0.75rem;
 }
 
 body[lang="mr"] .infra-item h4 {
-  font-family: 'Tiro Devanagari Marathi', serif;
+  font-family: "Tiro Devanagari Marathi", serif;
 }
 
 .infra-item p {
@@ -865,7 +900,11 @@ body[lang="mr"] .infra-item h4 {
 
 /* CTA Section */
 .cta-section {
-  background: linear-gradient(135deg, var(--forest-green) 0%, var(--deep-forest) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--forest-green) 0%,
+    var(--deep-forest) 100%
+  );
   color: white;
   text-align: center;
   padding: 5rem 0;
@@ -874,15 +913,23 @@ body[lang="mr"] .infra-item h4 {
 }
 
 .cta-section::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background: 
-    radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+  background:
+    radial-gradient(
+      circle at 20% 50%,
+      rgba(255, 255, 255, 0.1) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 80%,
+      rgba(255, 255, 255, 0.1) 0%,
+      transparent 50%
+    );
 }
 
 .cta-content {
@@ -983,7 +1030,8 @@ footer {
   font-size: 1.5rem;
 }
 
-.footer-section p, .footer-section a {
+.footer-section p,
+.footer-section a {
   color: rgba(255, 255, 255, 0.8);
   line-height: 1.8;
   text-decoration: none;
@@ -1027,7 +1075,8 @@ footer {
 }
 
 @keyframes float {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -1051,16 +1100,16 @@ footer {
   .nav-links {
     display: none;
   }
-  
+
   .mobile-menu {
     display: flex;
   }
-  
+
   .language-switcher {
     top: 80px;
     right: 1rem;
   }
-  
+
   .hero-content,
   .about-content,
   .vision-mission,
@@ -1069,27 +1118,27 @@ footer {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  
+
   .hero-visual {
     height: 400px;
   }
-  
+
   .floating-card {
     display: none;
   }
-  
+
   .hero-buttons {
     flex-direction: column;
   }
-  
+
   section {
     padding: 4rem 0;
   }
-  
+
   h1 {
     font-size: 2.5rem;
   }
-  
+
   h2 {
     font-size: 2rem;
   }
@@ -1099,23 +1148,23 @@ footer {
   .container {
     padding: 0 1rem;
   }
-  
+
   nav {
     padding: 1rem;
   }
-  
+
   .trust-badges {
     gap: 1rem;
   }
-  
+
   .badge {
     font-size: 0.85rem;
   }
-  
+
   .about-visuals {
     grid-template-columns: 1fr;
   }
-  
+
   .products-grid,
   .features-grid,
   .infrastructure-grid,
@@ -1123,11 +1172,11 @@ footer {
     grid-template-columns: 1fr;
     gap: 1.5rem;
   }
-  
+
   .language-switcher {
     padding: 0.4rem;
   }
-  
+
   .lang-btn {
     padding: 0.4rem 0.8rem;
     font-size: 0.85rem;

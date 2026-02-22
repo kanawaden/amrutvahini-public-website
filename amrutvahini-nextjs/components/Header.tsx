@@ -1,6 +1,7 @@
 'use client';
 
 import Link from 'next/link';
+import Image from 'next/image';
 import { useLanguage } from '@/contexts/LanguageContext';
 
 export default function Header() {
@@ -10,8 +11,7 @@ export default function Header() {
     <header>
       <nav>
         <Link href="#" className="logo">
-          <div className="logo-icon">AP</div>
-          <span>Amrutvahini Prakriya</span>
+          <Image src="/logo.png" alt="Amrutvahini Prakriya Logo" width={150} height={150} className="logo-img" style={{ objectFit: 'contain' }} />
         </Link>
         <ul className="nav-links">
           <li><Link href="#about">{t('nav.about')}</Link></li>
